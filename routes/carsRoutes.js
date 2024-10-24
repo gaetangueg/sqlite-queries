@@ -7,4 +7,12 @@ carsRouter.get("/test", (req, res) => {
 	})
 })
 
+
+// GET return a list of all cars
+carsRouter.get("/", (req, res) => {
+	res.json({
+		msg: "cars route test ok !!",
+	})
+})
+
 module.exports = carsRouter
