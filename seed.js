@@ -1,3 +1,5 @@
+const db = require("./database")
+
 const carsList = [
 	{
 		id: 1,
@@ -51,7 +53,7 @@ const carsList = [
 ]
 
 // Function to insert users
-function insertUsers() {
+function insertCars() {
 	carsList.forEach((car) => {
 		db.run(
 			`INSERT INTO cars (carName, carYear, carImage) VALUES (?, ?, ?)`,
@@ -66,3 +68,6 @@ function insertUsers() {
 		)
 	})
 }
+
+// Run the insert function
+insertCars()
