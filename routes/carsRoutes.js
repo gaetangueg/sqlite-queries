@@ -27,7 +27,7 @@ carsRouter.post("/", (req, res) => {
 })
 
 // PUT update a car based on the param id
-carsRouter.post("/:id", (req, res) => {
+carsRouter.put("/:id", (req, res) => {
 	res.json({
 		msg: "update a car based on its id ... ",
 	})
@@ -41,7 +41,7 @@ carsRouter.delete("/:id", (req, res) => {
 })
 
 // GET one car based on its id
-carsRouter.delete("/:id", (req, res) => {
+carsRouter.get("/:id", (req, res) => {
 	res.json({
 		msg: "update a car based on its id ... ",
 	})
